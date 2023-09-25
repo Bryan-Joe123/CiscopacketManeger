@@ -1,0 +1,42 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.23674316105654722 0.37604581719708124 0.8958472074307833 0.8159212167832349
+  position -4.62315 -7.22913 3.89868
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF SPHERE Transform {
+  translation 7 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.264 0.6
+        roughness 0.2
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.3
+	subdivision 2
+      }
+    }
+  ]
+}
+DEF CONE Transform {
+  translation 5 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.6 0.2 0.8
+        roughness 0.2
+        metalness 0
+      }
+      geometry Plane {
+        size 0.6 0.6
+      }
+    }
+  ]
+}
