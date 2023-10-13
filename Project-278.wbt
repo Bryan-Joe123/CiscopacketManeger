@@ -1,0 +1,119 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+  info [
+    "In this example, the robot moves down a slope."
+    "The altimeter is used to record the robots height."
+  ]
+  title "Altimeter"
+  basicTimeStep 8
+  contactProperties [
+    ContactProperties {
+      material2 "body"
+      coulombFriction [
+        0
+      ]
+      softCFM 0.1
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.3276918395906775 -0.171876930990913 0.9290190411712898 4.260277256799746
+  position 0.41697050086358683 1.47465365143237 1.1167246848377252
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+E-puck {
+  hidden position_0_0 367.8565160531542
+  hidden position_0_1 472.60288977660383
+  hidden linearVelocity_0 0.014635539821499531 0.004565626011704525 -4.041917972029274e-06
+  hidden angularVelocity_0 0.0010780755903855314 -0.003593380745920254 0.8323934080508864
+  hidden rotation_1 0 1 0 3.4317682367382076
+  hidden linearVelocity_1 -0.006053722045937562 -0.0018575869593674482 -4.318085194299386e-06
+  hidden angularVelocity_1 0.1233644154161727 -0.39957492440908765 0.8323966159280856
+  hidden rotation_2 0 -1 0 4.919193569044741
+  hidden linearVelocity_2 0.0352882825654009 0.011006853393932377 -4.6605058869219954e-06
+  hidden angularVelocity_2 -0.5807619008010928 1.8634581567627522 0.8332939080875235
+  translation 0.4585743798396488 -0.46117209189999686 -1.5783339993444973e-05
+  rotation -0.0016786898840155371 0.01099257655619088 0.9999381707190349 0.3046976056571028
+}
+E-puck {
+  hidden position_0_0 391.9472569155124
+  hidden position_0_1 479.57138498384654
+  hidden linearVelocity_0 0.03429301538356161 0.044231081898571 -1.820742117372975e-07
+  hidden angularVelocity_0 0.015188055404473193 -0.011780215320775776 0.09145329487379787
+  hidden rotation_1 0 1 0 2.3897678703780505
+  hidden linearVelocity_1 0.03277649463094432 0.04227648605966158 -6.156443798986256e-09
+  hidden angularVelocity_1 -2.1049669213048694 1.6319570581312202 0.09155828602479892
+  hidden rotation_2 0 1 0 2.04930163819797
+  hidden linearVelocity_2 0.03569039501860592 0.046034884449715485 6.475014357987016e-09
+  hidden angularVelocity_2 -2.3105971021164753 1.7913834482221036 0.09157927809166057
+  translation -0.18041897963239292 -0.2743073482010493 -1.5961142027553013e-05
+  rotation -0.0008842889699741176 0.0018051026561637378 0.9999979798166686 0.9116796062725617
+  name "e-puck(1)"
+}
+E-puck {
+  hidden position_0_0 400.90686044986666
+  hidden position_0_1 483.6857299071953
+  hidden linearVelocity_0 0.03995129419723312 -0.039313589252565284 -8.471975493856616e-08
+  hidden angularVelocity_0 -0.004479885836077938 -0.004548004181903688 0.09172010108905854
+  hidden rotation_1 0 -1 0 1.2169992096268785
+  hidden linearVelocity_1 0.03822964974918672 -0.0376177106387663 1.1222149216290454e-09
+  hidden angularVelocity_1 1.8730023642960614 1.9034718738169343 0.09182509185954893
+  hidden rotation_2 0 1 0 6.163646561546737
+  hidden linearVelocity_2 0.041629225555034004 -0.0409629308732475 -2.920005534163676e-10
+  hidden angularVelocity_2 2.056025419799535 2.089468109503423 0.09184593281150724
+  translation -0.31725686050053 -0.32608145801286553 -1.592251218444571e-05
+  rotation -0.001322024398523487 -0.0032275558272598782 0.9999939175489376 -0.7769618775496996
+  name "e-puck(2)"
+}
+Solid {
+  translation 0 0.27 0.05
+  children [
+    Shape {
+      appearance BakelitePlastic {
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  boundingObject DEF lol Box {
+    size 0.1 0.1 0.10445412681070129
+  }
+}
+Solid {
+  translation -0.29 -0.19 0.05
+  children [
+    Shape {
+      appearance BakelitePlastic {
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject DEF lol Box {
+    size 0.1 0.1 0.10445412681070129
+  }
+}
+Solid {
+  translation 0.2 -0.19 0.05
+  children [
+    Shape {
+      appearance BakelitePlastic {
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject DEF lol Box {
+    size 0.1 0.1 0.10445412681070129
+  }
+}
